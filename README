@@ -10,7 +10,7 @@ http://<yourdomain>/sc_login/
 
 - Add the following lines to your "settings.py" file:
 
-``` python
+```
 
 INSTALLED_APPS += ('<yourapp>.soundcloud')
 AUTHENTICATION_BACKENDS += ('<yourapp>.soundcloud.backend.ScBackend')
@@ -24,7 +24,7 @@ SC_CONSUMER_SECRET = "<soundcloud_secret>"
 
 - Add the following line to the patterns section in your "urls.py" file:
     
-``` python
+```
 
 (r'', include('<yourapp>.soundcloud.urls')),
 ```
