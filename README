@@ -15,7 +15,7 @@ http://yourdomain.com/sc_login/
     SC_API_HOST              = "api.soundcloud.com"
     SC_CONSUMER              = "<soundcloud_key>"
     SC_CONSUMER_SECRET       = "<soundcloud_secret>"
-    SC_CALLBACK_HOST         = "http://yourdomain.com/"
+    SC_CALLBACK_HOST         = "http://yourdomain.com/
 
 # (replace <yourapp> with your main app name, and <soundcloud_key> / <soundcloud_secret> with
 #  your app key and app secret provided in http://developers.soundcloud.com/ )
