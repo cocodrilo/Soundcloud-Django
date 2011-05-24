@@ -1,8 +1,8 @@
-/*******************************/
+/************************************/
 / Django Module to authenticate with 
 /  Soundcloud oauth2 API
 /  Contact: lucas@flipzu.com
-/*******************************/
+/************************************/
 
 - Register your app in http://developers.soundcloud.com/. Please use as "callback url" the following value:
 
