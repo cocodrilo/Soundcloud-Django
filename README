@@ -6,16 +6,16 @@
 
 - Register your app in http://developers.soundcloud.com/. Please use as "callback url" the following value:
 
-http://&lt;yourdomain&gt;/sc_login/
+http://yourdomain.com/sc_login/
 
 - Add the following lines to your "settings.py" file:
 
-    INSTALLED_APPS += ('<yourapp>.soundcloud')
+    INSTALLED_APPS          += ('<yourapp>.soundcloud')
     AUTHENTICATION_BACKENDS += ('<yourapp>.soundcloud.backend.ScBackend')
-    SC_API_HOST = "api.soundcloud.com"
-    SC_CONSUMER = "<soundcloud_key>"
-    SC_CONSUMER_SECRET = "<soundcloud_secret>"
-    SC_CALLBACK_HOST = "http://<domain>/"
+    SC_API_HOST              = "api.soundcloud.com"
+    SC_CONSUMER              = "<soundcloud_key>"
+    SC_CONSUMER_SECRET       = "<soundcloud_secret>"
+    SC_CALLBACK_HOST         = "http://yourdomain.com/"
 
 # (replace <yourapp> with your main app name, and <soundcloud_key> / <soundcloud_secret> with
 #  your app key and app secret provided in http://developers.soundcloud.com/ )
