@@ -10,8 +10,12 @@ http://yourdomain.com/sc_login/
 
 - Add the following lines to your "settings.py" file:
 
-    INSTALLED_APPS          += ('<yourapp>.soundcloud')
-    AUTHENTICATION_BACKENDS += ('<yourapp>.soundcloud.backend.ScBackend')
+    # add to INSTALLED_APPS
+        '<yourapp>.soundcloud'
+    # add to AUTHENTICATION_BACKENDS
+        '<yourapp>.soundcloud.backend.ScBackend'
+
+    # add at the end of settings.py
     SC_API_HOST              = "api.soundcloud.com"
     SC_CONSUMER              = "<soundcloud_key>"
     SC_CONSUMER_SECRET       = "<soundcloud_secret>"
