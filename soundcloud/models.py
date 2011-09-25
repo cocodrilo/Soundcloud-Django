@@ -21,7 +21,7 @@ class profile_sc(models.Model):
 ## METHOD 1: this method is for automatically creating the profile
 def create_user_profile(sender, instance, created,**kwargs):
     if created:
-        prof, created = profile.objects.get_or_create(user=instance)
+        prof, created = profile_sc.objects.get_or_create(user=instance)
 
 ## ... This is the trigger for the previous one
 post_save.connect(create_user_profile, sender=User)

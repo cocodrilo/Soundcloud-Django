@@ -14,6 +14,8 @@ http://yourdomain.com/sc_login/
         '<yourapp>.soundcloud'
     # add to AUTHENTICATION_BACKENDS
         '<yourapp>.soundcloud.backend.ScBackend'
+    # add AUTH_PROFILE_MODULE
+        AUTH_PROFILE_MODULE = '<yourapp>.soundcloud.profile_sc'
 
     # add at the end of settings.py
     SC_API_HOST              = "api.soundcloud.com"
